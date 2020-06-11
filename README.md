@@ -4,7 +4,11 @@ Famoso `Jogo da Cobrinha`
 
 Desenvolvido com `Javascript` + o poder do `Canvas`
 
-## Fluxo
+## Link para jogar
+
+[https://laisfrigerio.github.io/js-snake-game/](https://laisfrigerio.github.io/js-snake-game/)
+
+## Como jogar
 
 - Ao abrir o jogo, o mesmo inicia `pausado`
 - Pressione o botão `start` para iniciar o *game*
