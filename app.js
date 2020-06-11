@@ -2,6 +2,7 @@ const canvas = document.getElementById("snake")
 const context = canvas.getContext("2d")
 const box = 32
 
+let isPause = true
 let direction = "right"
 let food = { x: Math.floor(Math.random() * 15 + 1) * box, y: Math.floor(Math.random() * 15 + 1) * box }
 let snake = []
@@ -53,6 +54,18 @@ function checkGameOver() {
     }
 }
 
+function start () {
+    isPause = false
+    document.getElementById("start").classList.add("hide")
+    document.getElementById("pause").classList.remove("hide")
+}
+
+function pause () {
+    isPause = true
+    document.getElementById("pause").classList.add("hide")
+    document.getElementById("start").classList.remove("hide")
+}
+
 document.addEventListener('keydown', update)
 
 function update (event) {
@@ -63,23 +76,25 @@ function update (event) {
 }
 
 function initGame() {
-    checkCollision()
-    checkGameOver() 
-    initializeCanvas()
-    drawSnake()
-    drawFood()
+    if (!isPause) {
+        checkCollision()
+        checkGameOver() 
+        initializeCanvas()
+        drawSnake()
+        drawFood()
 
-    let snakeX = snake[0].x;
-    let snakeY = snake[0].y;
+        let snakeX = snake[0].x;
+        let snakeY = snake[0].y;
 
-    if (direction == "right") snakeX += box
-    else if (direction == "left") snakeX -= box
-    else if (direction == "up") snakeY -= box
-    else if (direction == "down") snakeY += box
+        if (direction == "right") snakeX += box
+        else if (direction == "left") snakeX -= box
+        else if (direction == "up") snakeY -= box
+        else if (direction == "down") snakeY += box
 
-    toEat()
-    let newHead = { x: snakeX, y: snakeY }
-    snake.unshift(newHead)
+        toEat()
+        let newHead = { x: snakeX, y: snakeY }
+        snake.unshift(newHead)
+    }
 }
 
 // let game = initGame()

@@ -51,7 +51,6 @@ button {
 button.start {
     background: #6bd82b;
     color: #294e13;
-    margin-bottom: 20px;
 }
 
 button.pause {
@@ -63,4 +62,8 @@ button.pause {
     display: flex;
     flex-direction: column;
     margin: 0 15px;
+}
+
+.hide {
+    display: none;
 }
