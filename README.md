@@ -6,4 +6,4 @@ Desenvolvido com `Javascript` + o poder do `Canvas`
 
 ## Screenshot
 
-![Tela Inicial do jogo](https://raw.githubusercontent.com/laisfrigerio/js-snake-game/master/screenshot/init-snake-game.png)
+![Tela Inicial do jogo](https://raw.githubusercontent.com/laisfrigerio/js-snake-game/master/screenshot/snake-add-logo.png)
