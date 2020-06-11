@@ -1,10 +1,9 @@
 # JS Snake Game
 
-Famoso "Jogo da Cobrinha"
+Famoso `Jogo da Cobrinha`
 
----
+Desenvolvido com `Javascript` + o poder do `Canvas`
 
-Desenvolvido com Javascript + o poder do Canvas
+## Screenshot
 
-### Print
-
+![Tela Inicial do jogo](https://raw.githubusercontent.com/laisfrigerio/js-snake-game/master/screenshot/init-snake-game.png)
