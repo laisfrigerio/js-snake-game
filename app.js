@@ -31,6 +31,15 @@ function drawFood () {
     context.fillRect(food.x, food.y, box, box)
 }
 
+function toEat() {
+    if (snake[0].x == food.x && snake[0].y == food.y) {
+        snake.unshift({ x: box, y: box })
+        food = { x: Math.floor(Math.random() * 15 + 1) * box, y: Math.floor(Math.random() * 15 + 1) * box }
+    } else {
+        snake.pop()
+    }
+}
+
 document.addEventListener('keydown', update)
 
 function update (event) {
@@ -64,9 +73,9 @@ function initGame() {
             break
     }
 
+    toEat()
     let newSnake = { x: snakeX, y: snakeY }
     
-    snake.pop()
     snake.unshift(newSnake)
 }
 
