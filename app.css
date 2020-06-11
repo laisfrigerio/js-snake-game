@@ -20,6 +20,11 @@ canvas {
     justify-content: center;
 }
 
+.row {
+    align-items: center;
+    display: flex;
+}
+
 h1 {
     color: #9c27b0;
     font-family: 'Press Start 2P', cursive;
@@ -33,3 +38,29 @@ svg {
 }
 
 svg * { fill: #6bd82b; }
+
+button {
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+button.start {
+    background: #6bd82b;
+    color: #294e13;
+    margin-bottom: 20px;
+}
+
+button.pause {
+    background: yellow;
+    color: #848421;
+}
+
+.config {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
