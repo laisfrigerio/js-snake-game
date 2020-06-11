@@ -14,6 +14,22 @@ canvas {
 }
 
 .content {
+    align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
+
+h1 {
+    color: #9c27b0;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+svg {
+    height: 40px;
+    width: 40px;
+}
+
+svg * { fill: #6bd82b; }

@@ -27,7 +27,7 @@ function checkCollision () {
 }
 
 function drawFood () {
-    context.fillStyle = "red"
+    context.fillStyle = "#4c4c4c"
     context.fillRect(food.x, food.y, box, box)
 }
 
