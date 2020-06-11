@@ -2,11 +2,12 @@ const canvas = document.getElementById("snake")
 const context = canvas.getContext("2d")
 const box = 32
 
+let direction = "right"
 let snake = []
 snake[0] = { x: 8 * box, y: 8 * box }
 
 function initializeCanvas () {
-    context.fillStyle = "#2a2a2a";
+    context.fillStyle = "#2a2a2a"
     context.fillRect(0, 0, 16 * box, 16 * box)
 }
 
@@ -17,5 +18,32 @@ function drawSnake () {
     }
 }
 
-initializeCanvas()
-drawSnake()
+function initGame() {
+    initializeCanvas()
+    drawSnake()
+
+    let snakeX = snake[0].x;
+    let snakeY = snake[0].y;
+
+    switch (direction) {
+        case "right":
+            snakeX += box
+            break
+        case "left":
+            snakeX -= box
+            break;
+        case "up":
+            snakeY -= box
+            break
+        case "down":
+            snakeY += box
+            break
+    }
+
+    let newSnake = { x: snakeX, y: snakeY }
+    
+    snake.pop()
+    snake.unshift(newSnake)
+}
+
+let jogo = setInterval(initGame, 100)
