@@ -25,6 +25,12 @@ canvas {
     display: flex;
 }
 
+.col {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     color: #9c27b0;
     font-family: 'Press Start 2P', cursive;
