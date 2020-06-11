@@ -6,7 +6,7 @@ Desenvolvido com `Javascript` + o poder do `Canvas`
 
 ## Fluxo
 
-- Ao abrir o jogo, o mesmo incicia `pausado`
+- Ao abrir o jogo, o mesmo inicia `pausado`
 - Pressione o botão `start` para iniciar o *game*
 - Para pausar, pressiona o botão `pause`
 

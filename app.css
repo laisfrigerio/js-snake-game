@@ -43,8 +43,6 @@ svg {
     width: 40px;
 }
 
-svg * { fill: #6bd82b; }
-
 button {
     border-radius: 4px;
     cursor: pointer;
